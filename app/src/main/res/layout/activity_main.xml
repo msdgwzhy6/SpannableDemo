@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.mraz.spannabledemo.MainActivity">
+
+        <TextView
+            android:id="@+id/AbsoluteSizeSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="AbsoluteSizeSpan"/>
+
+        <TextView
+            android:id="@+id/AlignmentSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="AlignmentSpan"/>
+
+        <TextView
+            android:id="@+id/BackgroundColorSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="BackgroundColorSpan"/>
+
+        <TextView
+            android:id="@+id/BulletSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="BulletSpan"/>
+
+        <TextView
+            android:id="@+id/ClickableSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="ClickableSpan"/>
+
+        <TextView
+            android:id="@+id/DrawableMarginSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="DrawableMarginSpan"/>
+
+        <TextView
+            android:id="@+id/DynamicDrawableSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="DynamicDrawableSpan"/>
+
+        <TextView
+            android:id="@+id/EasyEditSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="EasyEditSpan"/>
+
+        <TextView
+            android:id="@+id/ForegroundColorSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="ForegroundColorSpan"/>
+        <TextView
+            android:id="@+id/IconMarginSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="IconMarginSpan"/>
+        <TextView
+            android:id="@+id/ImageSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="ImageSpan"/>
+
+
+        <TextView
+            android:id="@+id/LeadingMarginSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="LeadingMarginSpan"/>
+
+        <TextView
+            android:id="@+id/LineBackgroundSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="LineBackgroundSpan"/>
+
+        <TextView
+            android:id="@+id/LineHeightSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="LineHeightSpan"/>
+
+        <TextView
+            android:id="@+id/LocaleSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="LocaleSpan"/>
+
+        <TextView
+            android:id="@+id/MaskFilterSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="MaskFilterSpan"/>
+
+        <TextView
+            android:id="@+id/MetricAffectingSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="MetricAffectingSpan"/>
+
+        <TextView
+            android:id="@+id/QuoteSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="QuoteSpan"/>
+
+        <TextView
+            android:id="@+id/RasterizerSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="RasterizerSpan"/>
+        <TextView
+            android:id="@+id/RelativeSizeSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="RelativeSizeSpan"/>
+        <TextView
+            android:id="@+id/ReplacementSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="ReplacementSpan"/>
+        <TextView
+            android:id="@+id/ScaleXSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="ScaleXSpan"/>
+
+        <TextView
+            android:id="@+id/SpellCheckSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SpellCheckSpan"/>
+        <TextView
+            android:id="@+id/StrikethroughSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="StrikethroughSpan"/>
+        <TextView
+            android:id="@+id/StyleSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="StyleSpan"/>
+        <TextView
+            android:id="@+id/SuggestionRangeSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SubscriptSpan"/>
+        <TextView
+            android:id="@+id/SuggestionSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SuggestionSpan"/>
+        <TextView
+            android:id="@+id/SuperscriptSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="SuperscriptSpan"/>
+        <TextView
+            android:id="@+id/TabStopSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="TabStopSpan"/>
+        <TextView
+            android:id="@+id/TextAppearanceSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="TextAppearanceSpan"/>
+        <TextView
+            android:id="@+id/TtsSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="TtsSpan"/>
+        <TextView
+            android:id="@+id/TypefaceSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="TypefaceSpan"/>
+        <TextView
+            android:id="@+id/UnderlineSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="UnderlineSpan"/>
+
+        <TextView
+            android:id="@+id/URLSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="URLSpan"/>
+
+        <TextView
+            android:id="@+id/WrapTogetherSpan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="TypefaceSpan"/>
+    </LinearLayout>
+</ScrollView>
