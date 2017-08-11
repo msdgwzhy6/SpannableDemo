@@ -95,20 +95,6 @@
             android:text="LeadingMarginSpan"/>
 
         <TextView
-            android:id="@+id/LineBackgroundSpan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="LineBackgroundSpan"/>
-
-        <TextView
-            android:id="@+id/LineHeightSpan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="LineHeightSpan"/>
-
-        <TextView
             android:id="@+id/LocaleSpan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -121,13 +107,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="MaskFilterSpan"/>
-
-        <TextView
-            android:id="@+id/MetricAffectingSpan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="MetricAffectingSpan"/>
 
         <TextView
             android:id="@+id/QuoteSpan"
@@ -149,24 +128,12 @@
             android:layout_marginTop="4dp"
             android:text="RelativeSizeSpan"/>
         <TextView
-            android:id="@+id/ReplacementSpan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="ReplacementSpan"/>
-        <TextView
             android:id="@+id/ScaleXSpan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="ScaleXSpan"/>
 
-        <TextView
-            android:id="@+id/SpellCheckSpan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="SpellCheckSpan"/>
         <TextView
             android:id="@+id/StrikethroughSpan"
             android:layout_width="wrap_content"
@@ -180,11 +147,12 @@
             android:layout_marginTop="4dp"
             android:text="StyleSpan"/>
         <TextView
-            android:id="@+id/SuggestionRangeSpan"
+            android:id="@+id/SubscriptSpan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="SubscriptSpan"/>
+
         <TextView
             android:id="@+id/SuggestionSpan"
             android:layout_width="wrap_content"
@@ -198,23 +166,11 @@
             android:layout_marginTop="4dp"
             android:text="SuperscriptSpan"/>
         <TextView
-            android:id="@+id/TabStopSpan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="TabStopSpan"/>
-        <TextView
             android:id="@+id/TextAppearanceSpan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:text="TextAppearanceSpan"/>
-        <TextView
-            android:id="@+id/TtsSpan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="TtsSpan"/>
         <TextView
             android:id="@+id/TypefaceSpan"
             android:layout_width="wrap_content"
@@ -233,13 +189,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:autoLink="web"
             android:text="URLSpan"/>
 
-        <TextView
-            android:id="@+id/WrapTogetherSpan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
-            android:text="TypefaceSpan"/>
     </LinearLayout>
 </ScrollView>

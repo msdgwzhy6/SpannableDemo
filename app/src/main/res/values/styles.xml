@@ -8,4 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="StyleSpanDemo">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:typeface">serif</item>
+    </style>
+
 </resources>
