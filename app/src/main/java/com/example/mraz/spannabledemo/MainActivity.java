@@ -116,11 +116,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
+        //pixel size
         SpannableString spanString = new SpannableString("AbsoluteSizeSpan");
         AbsoluteSizeSpan absoluteSizeSpan = new AbsoluteSizeSpan(100);
         spanString.setSpan(absoluteSizeSpan, 2, 5, Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         mAbsoluteSizeSpanTextView.setText(spanString);
 
+        //文本对齐方式
         SpannableString spannableString2 = new SpannableString(
                 "AlignmentSpanasdfasdfasdfasdfasdfasdasdfasdfasdasdagsdfsdfasdfsdfasdfasdafsdfsdfsdfsdf");
         AlignmentSpan alignmentSpan = new AlignmentSpan.Standard(Layout.Alignment.ALIGN_CENTER);
@@ -128,34 +130,39 @@ public class MainActivity extends AppCompatActivity {
                 Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         mAlignmentSpanTextView.setText(spannableString2);
 
+        //背景色改变
         SpannableString spannableString3 = new SpannableString("BackgroundColorSpan");
         BackgroundColorSpan backgroundColorSpan = new BackgroundColorSpan(
                 Color.parseColor("#FFAACC"));
         spannableString3.setSpan(backgroundColorSpan, 2, 5, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         mBackgroundColorSpanTextView.setText(spannableString3);
 
+        //小子弹，类似于列表前面的小圆圈
         SpannableString spannableString4 = new SpannableString("BulletSpan");
         spannableString4.setSpan(new BulletSpan(66, 0xff303F9F), 0, spannableString4.length(),
                 Spannable.SPAN_INCLUSIVE_INCLUSIVE);
         mBulletSpanTextView.setText(spannableString4);
 
+        //可点击
         SpannableString spannableString5 = new SpannableString("ClickableSpan");
         spannableString5.setSpan(new ClickableSpan() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(MainActivity.this, "Click", Toast.LENGTH_SHORT).show();
-            }
+        @Override
+        public void onClick(View view) {
+            Toast.makeText(MainActivity.this, "Click", Toast.LENGTH_SHORT).show();
+        }
         }, 0, 5, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         mClickableSpanTextView.setText(spannableString5);
         mClickableSpanTextView.setMovementMethod(LinkMovementMethod.getInstance());
 
 
+        //Drawable，不占位
         SpannableString spannableString6 = new SpannableString("DrawableMarginSpan");
         DrawableMarginSpan drawableMarginSpan = new DrawableMarginSpan(
                 getResources().getDrawable(R.drawable.android), 10);
-        spannableString6.setSpan(drawableMarginSpan, 0, 15, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
+        spannableString6.setSpan(drawableMarginSpan, 0, 0, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         mDrawableMarginSpanTextView.setText(spannableString6);
 
+        //DynamicDrawable,占位
         SpannableString spannableString7 = new SpannableString("DynamicDrawableSpan");
         DynamicDrawableSpan dynamicDrawableSpan = new DynamicDrawableSpan() {
             @Override
@@ -168,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
         spannableString7.setSpan(dynamicDrawableSpan, 0, 4, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         mDynamicDrawableSpanTextView.setText(spannableString7);
 
-        //
+        //不清楚这个是做什么的
         SpannableString spannableString8 = new SpannableString("EasyEditSpan貌似没效果");
         EasyEditSpan easyEditSpan = new EasyEditSpan();
         spannableString8.setSpan(easyEditSpan, 0, spannableString8.length(),
@@ -183,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
                 Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         mForegroundColorSpanTextView.setText(spannableString9);
 
-        //图标margin
+        //图标margin，不占位
         SpannableString spannableString10 = new SpannableString(
                 "IconMarginSpan------------------------");
         IconMarginSpan iconMarginSpan = new IconMarginSpan(
@@ -192,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
                 Spanned.SPAN_INCLUSIVE_INCLUSIVE);
         mIconMarginSpanTextView.setText(spannableString10);
 
-        //图片
+        //图片，占位
         SpannableString spannableString11 = new SpannableString(
                 "ImageSpan------------------------");
         ImageSpan imageSpan = new ImageSpan(this,
@@ -201,7 +208,7 @@ public class MainActivity extends AppCompatActivity {
         mImageSpanTextView.setText(spannableString11);
 
 
-        //
+        //控制行前空隙
         SpannableString spannableString12 = new SpannableString(
                 "LeadingMarginSpan.Standard--------------------------------------------------");
         spannableString12.setSpan(new LeadingMarginSpan.Standard(96, 36), 0,
@@ -211,6 +218,7 @@ public class MainActivity extends AppCompatActivity {
         //LineBackgroundSpan接口类
         //LineHeightSpan接口类
 
+        //不知道是做什么的
         SpannableString spannableString13 = new SpannableString("LocaleSpan貌似没有什么效果或者我的用法不对");
         LocaleSpan localeSpan = new LocaleSpan(Locale.JAPAN);
         spannableString13.setSpan(localeSpan, 0, 4, Spanned.SPAN_INCLUSIVE_INCLUSIVE);
@@ -317,11 +325,11 @@ public class MainActivity extends AppCompatActivity {
         mUnderlineSpanTextView.setText(spannableString26);
 
 
-        //URL
-        SpannableString spannableString27 = new SpannableString("URLSpan------------------------------");
-        URLSpan urlSpan = new URLSpan("https://www/baidu.com");
-        spannableString27.setSpan(urlSpan, 0, spannableString26.length(), Spanned.SPAN_INCLUSIVE_INCLUSIVE);
-        mURLSpanTextView.setText(spannableString27);
+//URL
+SpannableString spannableString27 = new SpannableString("URLSpan------------------------------");
+URLSpan urlSpan = new URLSpan("https://www/baidu.com");
+spannableString27.setSpan(urlSpan, 0, spannableString26.length(), Spanned.SPAN_INCLUSIVE_INCLUSIVE);
+mURLSpanTextView.setText(spannableString27);
 
         //WrapTogetherSpan接口
     }
